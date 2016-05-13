@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <%= image_tag @client.image.thumb.url , class: "img-circle"%>
+    </div>
+    <div class="col-md-6">
+      <p>
+        <strong>Nombre:</strong>
+        <%= @client.name %>
+      </p>
+      <p>
+        <strong>Correo electrónico:</strong>
+        <%= @client.email %>
+      </p>
+
+      <p>
+        <strong>Teléfono:</strong>
+        <%= @client.phone %>
+      </p>
+
+      <p>
+        <strong>Edad:</strong>
+        <%= @client.age %>
+      </p>
+
+      <p>
+        <strong>Fecha de Nacimiento:</strong>
+        <%= @client.date_of_birth %>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <%= link_to 'Editar', edit_client_path(@client) %> |
+      <%= link_to 'Regresar', clients_path %>
+    </div>
+  </div>
+
+</div>

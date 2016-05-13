@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CatalogoApp</title>
+  <title>Catálogo de Clientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <p>Catálogo de Clientes</p>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Clientes', clients_path %></li>
+        <li><%= link_to 'Crear Nuevo Cliente', new_client_path %></li>
+       
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
 <%= yield %>
+
+<footer class="footer">
+  <div class="col-md-12 centered">
+    <p class="pull-left">Por Andrea Dardón - <a href="mailto:amdardon@gmail.com">amdardon@gmail.com</a></p>
+  </div>
+</footer>
 
 </body>
 </html>

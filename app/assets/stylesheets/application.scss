@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+a {
+	color: #383838;
+}
+
+a:hover { 
+	color: #383838; 
+	text-decoration: none;
+}
+
+a:visited {
+	color: #383838;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #383838;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #3692ce;
+}
+
+.titulo {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #3692ce;
+}
+
+
+.btn-catalogo {
+	border-radius: 0px;
+	color: white;
+	background-color: #A0C2D9;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.btn-catalogo:hover {
+	border-radius: 0px;
+	color: #383838;
+	background-color: white;
+	border-color: #B6ABB9;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+th {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+td {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.actions {
+	color: #383838;
+}
+
+
+
+
